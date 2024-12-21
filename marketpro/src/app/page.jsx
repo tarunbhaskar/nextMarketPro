@@ -52,9 +52,6 @@ const page = () => {
       {/* PromotionalOne */}
       <PromotionalOne />
 
-      {/* FlashSalesOne */}
-      <FlashSalesOne />
-
       {/* ProductListOne */}
       <ProductListOne />
 
@@ -66,9 +63,6 @@ const page = () => {
 
       {/* HotDealsOne */}
       <HotDealsOne />
-
-      {/* TopVendorsOne */}
-      <TopVendorsOne />
 
       {/* BestSellsOne */}
       <BestSellsOne />

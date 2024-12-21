@@ -151,25 +151,6 @@ const HeaderOne = () => {
                       Home Grocery
                     </Link>
                   </li>
-                  <li className='common-dropdown__item nav-submenu__item'>
-                    <Link
-                      href='/index-two'
-                      className='common-dropdown__link nav-submenu__link hover-bg-neutral-100'
-                      onClick={() => setActiveIndex(null)}
-                    >
-                      {" "}
-                      Home Electronics
-                    </Link>
-                  </li>
-                  <li className='common-dropdown__item nav-submenu__item'>
-                    <Link
-                      href='/index-three'
-                      className='common-dropdown__link nav-submenu__link hover-bg-neutral-100'
-                      onClick={() => setActiveIndex(null)}
-                    >
-                      Home Fashion
-                    </Link>
-                  </li>
                 </ul>
               </li>
 
@@ -342,44 +323,6 @@ const HeaderOne = () => {
                       onClick={() => setActiveIndex(null)}
                     >
                       Vendors Two Details
-                    </Link>
-                  </li>
-                </ul>
-              </li>
-
-              {/* Blog Menu */}
-              <li
-                onClick={() => handleMenuClick(4)}
-                className={`on-hover-item nav-menu__item has-submenu ${
-                  activeIndex === 4 ? "d-block" : ""
-                }`}
-              >
-                <Link href='#' className='nav-menu__link'>
-                  Blog
-                </Link>
-                <ul
-                  className={`on-hover-dropdown common-dropdown nav-submenu scroll-sm ${
-                    activeIndex === 4 ? "open" : ""
-                  }`}
-                >
-                  <li className='common-dropdown__item nav-submenu__item'>
-                    <Link
-                      href='/blog'
-                      className='common-dropdown__link nav-submenu__link hover-bg-neutral-100'
-                      onClick={() => setActiveIndex(null)}
-                    >
-                      {" "}
-                      Blog
-                    </Link>
-                  </li>
-                  <li className='common-dropdown__item nav-submenu__item'>
-                    <Link
-                      href='/blog-details'
-                      className='common-dropdown__link nav-submenu__link hover-bg-neutral-100'
-                      onClick={() => setActiveIndex(null)}
-                    >
-                      {" "}
-                      Blog Details
                     </Link>
                   </li>
                 </ul>
@@ -1218,29 +1161,6 @@ const HeaderOne = () => {
                           Home Grocery
                         </Link>
                       </li>
-                      <li className='common-dropdown__item nav-submenu__item'>
-                        <Link
-                          href='/index-two'
-                          scroll={false}
-                          className={`common-dropdown__link nav-submenu__link hover-bg-neutral-100 ${
-                            pathname == "/index-two" && "activePage"
-                          } `}
-                        >
-                          {" "}
-                          Home Electronics
-                        </Link>
-                      </li>
-                      <li className='common-dropdown__item nav-submenu__item'>
-                        <Link
-                          href='/index-three'
-                          scroll={false}
-                          className={`common-dropdown__link nav-submenu__link hover-bg-neutral-100 ${
-                            pathname == "/index-three" && "activePage"
-                          } `}
-                        >
-                          Home Fashion
-                        </Link>
-                      </li>
                     </ul>
                   </li>
                   <li className='on-hover-item nav-menu__item has-submenu'>
@@ -1383,60 +1303,6 @@ const HeaderOne = () => {
                           } `}
                         >
                           Vendor Details
-                        </Link>
-                      </li>
-                      <li className='common-dropdown__item nav-submenu__item'>
-                        <Link
-                          href='/vendor-two'
-                          scroll={false}
-                          className={`common-dropdown__link nav-submenu__link hover-bg-neutral-100 ${
-                            pathname == "/vendor-two" && "activePage"
-                          } `}
-                        >
-                          Vendors Two
-                        </Link>
-                      </li>
-
-                      <li className='common-dropdown__item nav-submenu__item'>
-                        <Link
-                          href='/vendor-two-details'
-                          scroll={false}
-                          className={`common-dropdown__link nav-submenu__link hover-bg-neutral-100 ${
-                            pathname == "/vendor-two-details" && "activePage"
-                          } `}
-                        >
-                          Vendors Two Details
-                        </Link>
-                      </li>
-                    </ul>
-                  </li>
-                  <li className='on-hover-item nav-menu__item has-submenu'>
-                    <Link href='#' className='nav-menu__link'>
-                      Blog
-                    </Link>
-                    <ul className='on-hover-dropdown common-dropdown nav-submenu scroll-sm'>
-                      <li className='common-dropdown__item nav-submenu__item'>
-                        <Link
-                          href='/blog'
-                          scroll={false}
-                          className={`common-dropdown__link nav-submenu__link hover-bg-neutral-100 ${
-                            pathname == "/blog" && "activePage"
-                          } `}
-                        >
-                          {" "}
-                          Blog
-                        </Link>
-                      </li>
-                      <li className='common-dropdown__item nav-submenu__item'>
-                        <Link
-                          href='/blog-details'
-                          scroll={false}
-                          className={`common-dropdown__link nav-submenu__link hover-bg-neutral-100 ${
-                            pathname == "/blog-details" && "activePage"
-                          } `}
-                        >
-                          {" "}
-                          Blog Details
                         </Link>
                       </li>
                     </ul>
